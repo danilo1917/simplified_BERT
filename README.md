@@ -7,6 +7,9 @@ The motivation for this project is rooted in the influential paper "BERT: Pre-tr
 BERT's results established new performance benchmarks in tasks such as the General Language Understanding Evaluation (GLUE) benchmark, SQuAD for question answering, and SWAG for common sense inference. However, the original BERT model requires extensive computational resources for pre-training and fine-tuning, making it difficult to reproduce on modest hardware.
 In this project, we implemented a simplified version of BERT, named Mini-BERT, to perform binary text classification on the IMDB sentiment analysis dataset. The IMDB dataset, which contains 50,000 movie reviews labeled as positive or negative, was chosen due to its smaller size and accessibility for training within resource constraints.
 
+## IMDB Dataset
+You can find the IMDB dataset for Binary Sentiment Analysis at https://huggingface.co/datasets/stanfordnlp/imdb/viewer/plain_text/test
+
 # Implementation Details
 The implementation of Mini-BERT preserves the core components of the original BERT model but simplifies the architecture to suit limited computational resources. The model consists of an embedding layer, multiple Transformer encoder layers, and a final classification layer. Each component follows the structure of a Transformer as described in the original BERT paper.
 Overall Structure of the Code
